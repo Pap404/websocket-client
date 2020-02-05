@@ -3,16 +3,31 @@
   <component name="ChangeListManager">
     <list default="true" id="535adbce-d50c-404f-b13c-80439fb93ecf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Chat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1X865x4wU1nsxbYsr6NPcqKSIjE" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -23,7 +38,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../websocket-webflux-client" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -74,7 +89,9 @@
       <updated>1580415194730</updated>
       <workItem from="1580415206118" duration="1338000" />
       <workItem from="1580418301130" duration="1990000" />
-      <workItem from="1580421469331" duration="592000" />
+      <workItem from="1580421469331" duration="4306000" />
+      <workItem from="1580472781826" duration="10692000" />
+      <workItem from="1580908615789" duration="261000" />
     </task>
     <servers />
   </component>
@@ -82,29 +99,33 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1580908671438">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1580908671438" />
     <state x="867" y="258" key="Github.ShareDialog" timestamp="1580419899547">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="867" y="258" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1580419899547" />
-    <state width="656" height="179" key="GridCell.Tab.0.bottom" timestamp="1580420557690">
+    <state width="607" height="181" key="GridCell.Tab.0.bottom" timestamp="1580642625766">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="656" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580420557690" />
-    <state width="656" height="179" key="GridCell.Tab.0.center" timestamp="1580420557683">
+    <state width="607" height="181" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580642625766" />
+    <state width="607" height="181" key="GridCell.Tab.0.center" timestamp="1580642625766">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="656" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1580420557683" />
-    <state width="656" height="179" key="GridCell.Tab.0.left" timestamp="1580420557683">
+    <state width="607" height="181" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1580642625766" />
+    <state width="607" height="181" key="GridCell.Tab.0.left" timestamp="1580642625766">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="656" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1580420557683" />
-    <state width="656" height="179" key="GridCell.Tab.0.right" timestamp="1580420557690">
+    <state width="607" height="181" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1580642625766" />
+    <state width="607" height="181" key="GridCell.Tab.0.right" timestamp="1580642625766">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="656" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1580420557690" />
-    <state x="704" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1580419588829">
+    <state width="607" height="181" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1580642625766" />
+    <state x="704" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1580472791012">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="704" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1580419588829" />
+    <state x="704" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1580472791012" />
   </component>
 </project>

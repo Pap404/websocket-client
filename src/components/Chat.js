@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import ChatInput from './ChatInput'
 import ChatMessage from './ChatMessage'
+import {wsConnect} from "../middleware/websocket";
+import {connect} from "react-redux";
 
 const URL = 'ws://localhost:8080/greetings';
 
@@ -12,14 +14,16 @@ class Chat extends Component {
     ws = new WebSocket(URL);
 
     componentDidMount() {
-        this.ws.onopen = () => {
-            console.log('connected')
-        };
+        // this.ws.onopen = () => {
+        //     console.log('connected')
+        // };
+
+        this.props.c();
 
         this.ws.onmessage = evt => {
             const message = JSON.parse(evt.data);
             this.addMessage(message)
-        }
+        };
 
         this.ws.onclose = () => {
             console.log('disconnected');
@@ -57,4 +61,20 @@ class Chat extends Component {
     }
 }
 
-export default Chat;
+const mapDispatchToProps = (dispatch) => {
+    return {
+        c: () => {
+            const host = `ws://localhost:8080/greeting`;
+            dispatch(wsConnect(host));
+            console.log("connected")
+        },
+        sendMessage: (msg) => {
+            dispatch({type: "NEW_MESSAGE", msg: msg})
+        }
+    }
+};
+
+export default connect(
+    null,
+    mapDispatchToProps
+)(Chat);
