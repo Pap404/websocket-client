@@ -20,10 +20,10 @@ const middleware = () => {
     return store => next => action => {
         switch (action.type) {
             case 'WS_CONNECT':
-                // if (socket !== null) {
-                //     socket.close();
-                // }
-                socket = new WebSocket(action.host);
+                if (socket !== null) {
+                    socket.close();
+                }
+                socket = new WebSocket("ws://localhost:8080/greetings");
                 socket.onmessage = onMessage(store);
                 socket.onclose = onCLose(store);
                 socket.onopen = onOpen(store);

@@ -3,6 +3,7 @@ import ChatInput from './ChatInput'
 import ChatMessage from './ChatMessage'
 import {wsConnect} from "../middleware/websocket";
 import {connect} from "react-redux";
+import {createMessage} from "../actions";
 
 const URL = 'ws://localhost:8080/greetings';
 
@@ -48,7 +49,7 @@ class Chat extends Component {
             <div>
                 <ChatInput
                     ws={this.ws}
-                    onSubmitMessage={messageString => this.submitMessage(messageString)}
+                    onSubmitMessage={messageString => this.props.sendMessage(messageString)}
                 />
                 {this.state.messages.map((message, index) =>
                     <ChatMessage
@@ -61,6 +62,12 @@ class Chat extends Component {
     }
 }
 
+const mapStateToProps = (state) => {
+  return {
+      messages: state.message
+  }
+};
+
 const mapDispatchToProps = (dispatch) => {
     return {
         c: () => {
@@ -69,12 +76,12 @@ const mapDispatchToProps = (dispatch) => {
             console.log("connected")
         },
         sendMessage: (msg) => {
-            dispatch({type: "NEW_MESSAGE", msg: msg})
+            dispatch(createMessage({type: "NEW_MESSAGE", msg: msg}))
         }
     }
 };
 
 export default connect(
-    null,
+    mapStateToProps,
     mapDispatchToProps
 )(Chat);
